@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app='gitHubApi'>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Git Hub API</title>
+</head>
+<body ng-controller='myController'>
+		<div class='top'>
+			<h1>Git Hub Friends</h1>
+		</div>
+
+
+		<div class='searchBox'>
+			<input ng-model="userName" placeholder="Search"/>
+				<button ng-click='getUserData()'>Submit</button>
+			</input>
+		</div>
+
+			<div class='info'>
+				<div class='name'>
+					{{user.name}}
+				</div>
+					
+					<div class='image'>
+						<img ng-src="{{user.avatar_url}}">
+					</div>
+					
+					<div class='userInfo'>
+						<p>Location: {{user.location}}</p>
+						<p>Email: {{user.email}}</p>
+					</div>
+			</div>
+
+		<div class='three-boxes'>
+			<div class='box one'>
+				<h1>Following</h1>
+					<div class='number _one'>
+						{{user.following}}
+					</div>
+			</div>
+			
+			<div class='box two'>
+				<h1>Followers</h1>
+					<div class='number _two'>
+						{{user.followers}}
+					</div>
+			</div>
+			
+			<div class='box three'>
+				<h1>Public Repos</h1>
+					<div class='number _three'>
+						{{user.public_repos}}
+					</div>
+			</div>
+		</div>
+
+
+
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js'></script>
+<script src='app/app.js'></script>
+<script src='app/controller.js'></script>
+<script src='app/service.js'></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+}
+.searchBox {
+	width: 50%;
+	height: 5%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	border: 1px solid red;
+}	
+input {
+	width: 50%;
+}
+
+.top {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid blue;
+	text-align: center;
+}
+.info {
+
+	width: 65%;
+	height: 50%;
+	border: 1px solid black;
+	margin: 1% auto;
+}
+.name {
+	height: 25px;
+	width: 50%;
+	text-align: center;
+	font-size: 25px;
+	margin: 10px auto 0 auto;
+	border: 1px solid black;
+
+
+}
+.image{
+height: 125px;
+width: 125px;
+border: 1px solid blue;
+box-sizing: border-box;
+margin: 20px auto;
+}
+img {
+height: 100%;
+width: 100%;
+}
+
+.userInfo {
+	margin: 1px auto;
+	height: 70px;
+	width: 50%;
+	border: 1px solid red;
+	box-sizing: border-box;
+
+
+}
+.three-boxes {
+	width: 65%;
+	height: 30%;
+	border: 1px solid blue;
+	box-sizing: border-box;
+	margin: 1% auto;
+	display: flex;
+	justify-content: space-between;
+}
+.box {
+	border: 1px solid red;
+	box-sizing: border-box;
+	width: 30%;
+	height: 100%;
+}
+h1 {
+	text-align: center;
+}
+
+.number {
+	text-align: center;
+	font-size: 40px;
+}
